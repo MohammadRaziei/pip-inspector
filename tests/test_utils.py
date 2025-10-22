@@ -133,3 +133,4 @@ class TestFetchUrlContent:
         assert 'Accept' in headers
         assert 'Accept-language' in headers
         assert headers['User-agent'].startswith('Mozilla/5.0')
+        assert 'fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' in headers['Accept-language']
